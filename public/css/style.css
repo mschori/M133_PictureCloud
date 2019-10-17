@@ -1,0 +1,79 @@
+.bg-green{
+    background-color: #1e9fa6 !important;
+}
+.library-card-container{
+    width: 80%;
+}
+.body-content{
+    padding-bottom: 7rem;
+}
+.footer-top{
+    min-height: 3rem;
+    background-color: #207b80;
+}
+.footer-bottom{
+    background-color: #207b80;
+}
+.nav-bar-icon{
+    color: #1e9fa6;
+}
+.nav-bar-link{
+    color: #1e9fa6;
+}
+.btn-cyan {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.btn-cyan:focus,
+.btn-cyan:hover,
+.btn-cyan:focus {
+    color: #333;
+    text-decoration: none;
+}
+.btn-cyan:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-cyan{
+    background-color: #1e9fa6;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.upload-btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
