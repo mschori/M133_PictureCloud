@@ -19,9 +19,9 @@ class LibraryController extends Controller
         $email = $user->email;
 
         $images = [];
-        $filesInFolder = \File::files('images/' . $email);
+        $files_in_folder = \File::files('images/' . $email);
 
-        foreach ($filesInFolder as $path) {
+        foreach ($files_in_folder as $path) {
             $images[] = pathinfo($path);
         }
 

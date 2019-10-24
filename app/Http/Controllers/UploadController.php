@@ -19,8 +19,8 @@ class UploadController extends Controller
 
         $image = $request->file('image');
         $input['imagename'] = time() . '.' . $image->getClientOriginalExtension();
-        $destinationPath = public_path('/images/' . $user->email);
-        $image->move($destinationPath, $input['imagename']);
+        $destination_path = public_path('/images/' . $user->email);
+        $image->move($destination_path, $input['imagename']);
 
         return redirect('/library');
     }
