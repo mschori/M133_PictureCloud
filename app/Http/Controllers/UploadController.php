@@ -6,11 +6,15 @@ use Illuminate\Http\Request;
 
 class UploadController extends Controller
 {
-    public function __construct() {
+    // Check if logged in
+    public function __construct()
+    {
         $this->middleware('auth');
     }
 
-    public function upload(Request $request){
+    // Upload file into user-folder
+    public function upload(Request $request)
+    {
         $user = auth()->user();
 
         $image = $request->file('image');

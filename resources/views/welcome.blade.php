@@ -8,7 +8,9 @@
     <p>
         Register now and upload your pictures to save them forever. Download not possible.
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid architecto, aut blanditiis doloribus odio optio perspiciatis, quam quisquam suscipit tempora temporibus veniam. Doloremque dolores illum laborum minus voluptas.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid architecto, aut blanditiis doloribus
+        odio optio perspiciatis, quam quisquam suscipit tempora temporibus veniam. Doloremque dolores illum laborum
+        minus voluptas.
     </p>
 
     <div class="container">

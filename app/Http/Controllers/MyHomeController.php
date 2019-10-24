@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 class MyHomeController extends Controller
 {
 
-    public function __construct() {
+    // Check if logged in
+    public function __construct()
+    {
         $this->middleware('auth');
     }
 
-    public function myHome(){
+    // Render myHome-View and send username as 'name'
+    public function myHome()
+    {
         $user = auth()->user();
         return view('myHome', ['name' => $user->name]);
     }

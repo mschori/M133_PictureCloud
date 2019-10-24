@@ -21,13 +21,14 @@
         </div>
 
     </form>
-
+    <!-- Library-Cards with every uploaded image of the user -->
     <div class="mt-5 library-card-container">
         <div class="card-columns">
             @foreach($images as $photo)
                 <div class="card" style="">
                     <a href="/download/{{$photo['basename']}}">
-                    <img class="card-img-top" src="images/{{ $email . '/' . $photo['basename'] }}" alt="{{$photo['filename']}}">
+                        <img class="card-img-top" src="images/{{ $email . '/' . $photo['basename'] }}"
+                             alt="{{$photo['filename']}}">
                     </a>
                 </div>
             @endforeach
@@ -35,7 +36,8 @@
     </div>
 
     <script>
-        document.querySelector("#image").onchange = function(){
+        // Skript to display the filename of selected image to upload
+        document.querySelector("#image").onchange = function () {
             document.querySelector("#choiceButton").textContent = this.files[0].name;
         }
     </script>

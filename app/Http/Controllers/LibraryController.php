@@ -6,19 +6,22 @@ use Illuminate\Http\Request;
 
 class LibraryController extends Controller
 {
-    public function __construct() {
+    // Check if logged in
+    public function __construct()
+    {
         $this->middleware('auth');
     }
 
-    public function library(){
+    // Render library-view and send images, email and username
+    public function library()
+    {
         $user = auth()->user();
         $email = $user->email;
 
         $images = [];
         $filesInFolder = \File::files('images/' . $email);
 
-        foreach($filesInFolder as $path)
-        {
+        foreach ($filesInFolder as $path) {
             $images[] = pathinfo($path);
         }
 
